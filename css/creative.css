@@ -155,7 +155,7 @@ header {
   background-size: cover;
   -o-background-size: cover;
   background-position: center;
-  background-image: url('../img/girl-standing-on-the-autumn-grass-picjumbo-com.jpg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/girl-standing-on-the-autumn-grass-picjumbo-com.jpg');
   text-align: center;
   color: white;
   opacity: 0.5;
