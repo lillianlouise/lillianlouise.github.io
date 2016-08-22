@@ -283,6 +283,7 @@
                     <button type="submit" value="submit" class="btn btn-pill btn-primary">Send message</button>
                   </div>
                 </form>
+                <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
               </div>
         
             </div>
@@ -291,7 +292,7 @@
     
     <!-- for contact form -->
     <script src="assets/js/jquery.min.js"></script>
-    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
+    
     <script type="text/javascript">var submitted=false;</script>
     <script type="text/javascript">
     $('#contact-form').on('submit', function(e) {
