@@ -155,9 +155,15 @@ header {
   background-size: cover;
   -o-background-size: cover;
   background-position: center;
-  background-image: url('../img/header.jpg');
+<<<<<<< HEAD
+  text-align: center;
+  background-color: #27ae60;
+=======
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/girl-standing-on-the-autumn-grass-picjumbo-com.jpg');
   text-align: center;
   color: white;
+  opacity: 0.5;
+>>>>>>> parent of 93cfa90... opacity css 0.5
 }
 header .header-content {
   position: relative;
