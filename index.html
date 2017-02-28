@@ -61,6 +61,176 @@
 
     <header>
         <div class="header-content">
+            <div id='product-component-61e3993f417'></div>
+            <script type="text/javascript">
+            /*<![CDATA[*/
+
+            (function () {
+              var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
+              if (window.ShopifyBuy) {
+                if (window.ShopifyBuy.UI) {
+                  ShopifyBuyInit();
+                } else {
+                  loadScript();
+                }
+              } else {
+                loadScript();
+              }
+
+              function loadScript() {
+                var script = document.createElement('script');
+                script.async = true;
+                script.src = scriptURL;
+                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
+                script.onload = ShopifyBuyInit;
+              }
+
+              function ShopifyBuyInit() {
+                var client = ShopifyBuy.buildClient({
+                  domain: 'lillian-louise.myshopify.com',
+                  apiKey: '454d76f9570225abec4d7ce0de87d130',
+                  appId: '6',
+                });
+
+                ShopifyBuy.UI.onReady(client).then(function (ui) {
+                  ui.createComponent('product', {
+                    id: [9980770372],
+                    node: document.getElementById('product-component-61e3993f417'),
+                    moneyFormat: '%24%7B%7Bamount%7D%7D',
+                    options: {
+              "product": {
+                "buttonDestination": "checkout",
+                "layout": "horizontal",
+                "variantId": "all",
+                "width": "100%",
+                "contents": {
+                  "variantTitle": false,
+                  "description": true,
+                  "buttonWithQuantity": true,
+                  "button": false,
+                  "quantity": false
+                },
+                "text": {
+                  "button": "BUY NOW"
+                },
+                "styles": {
+                  "product": {
+                    "text-align": "left",
+                    "@media (min-width: 601px)": {
+                      "max-width": "100%",
+                      "margin-left": "0",
+                      "margin-bottom": "50px"
+                    }
+                  },
+                  "button": {
+                    "background-color": "#56e2d9",
+                    "color": "#181717",
+                    ":hover": {
+                      "background-color": "#4dcbc3",
+                      "color": "#181717"
+                    },
+                    ":focus": {
+                      "background-color": "#4dcbc3"
+                    }
+                  },
+                  "title": {
+                    "font-size": "26px"
+                  },
+                  "price": {
+                    "font-size": "18px"
+                  },
+                  "compareAt": {
+                    "font-size": "15px"
+                  }
+                }
+              },
+              "cart": {
+                "contents": {
+                  "button": true
+                },
+                "styles": {
+                  "button": {
+                    "background-color": "#56e2d9",
+                    "color": "#181717",
+                    ":hover": {
+                      "background-color": "#4dcbc3",
+                      "color": "#181717"
+                    },
+                    ":focus": {
+                      "background-color": "#4dcbc3"
+                    }
+                  },
+                  "footer": {
+                    "background-color": "#ffffff"
+                  }
+                }
+              },
+              "modalProduct": {
+                "contents": {
+                  "variantTitle": false,
+                  "buttonWithQuantity": true,
+                  "button": false,
+                  "quantity": false
+                },
+                "styles": {
+                  "product": {
+                    "@media (min-width: 601px)": {
+                      "max-width": "100%",
+                      "margin-left": "0px",
+                      "margin-bottom": "0px"
+                    }
+                  },
+                  "button": {
+                    "background-color": "#56e2d9",
+                    "color": "#181717",
+                    ":hover": {
+                      "background-color": "#4dcbc3",
+                      "color": "#181717"
+                    },
+                    ":focus": {
+                      "background-color": "#4dcbc3"
+                    }
+                  }
+                }
+              },
+              "toggle": {
+                "styles": {
+                  "toggle": {
+                    "background-color": "#56e2d9",
+                    ":hover": {
+                      "background-color": "#4dcbc3"
+                    },
+                    ":focus": {
+                      "background-color": "#4dcbc3"
+                    }
+                  },
+                  "count": {
+                    "color": "#181717",
+                    ":hover": {
+                      "color": "#181717"
+                    }
+                  },
+                  "iconPath": {
+                    "fill": "#181717"
+                  }
+                }
+              },
+              "productSet": {
+                "styles": {
+                  "products": {
+                    "@media (min-width: 601px)": {
+                      "margin-left": "-20px"
+                    }
+                  }
+                }
+              }
+            }
+                  });
+                });
+              }
+            })();
+            /*]]>*/
+            </script>            
             <div class="header-content-inner">
                 <h1 id="homeHeading">Fresh Flats by Lillian Louise</h1>
                 <hr>
